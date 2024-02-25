@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav ul li a {
+            color: rgb(255, 255, 0);
+            text-decoration: none;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        section h2 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            /* Removes default bullet points */
+            padding: 0;
+        }
+
+        ul li::before {
+            content: "•";
+            /* Custom bullet point */
+            color: #f44336;
+            /* Bullet point color */
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        a:hover {
+            opacity: 0.8;
+            /* Simple hover effect */
+        }
+        .tutorial {
+            display: flex; /* Use flexbox for layout */
+            align-items: center; /* Center vertically */
+            margin-bottom: 20px; /* Add some space between tutorials */
+        }
+        
+        .tutorial img {
+            width: 100px; /* Set image width */
+            height: auto; /* Maintain aspect ratio */
+            padding-right: 20px; /* Add space between image and text */
+        }
+    </style>
+</head>
+
+<body>
+    <h1
+        style="text-align: left;padding: 20px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+        Tutorials.</h1>
+    <nav>
+        <ul style="text-align: center;padding-inline-start: 40px;margin-block-start: 1em;margin-block-end: 1em;">
+            <li
+                style="display:inline-block;background-color: #f44336;padding: 15px 25px;text-align: center;margin-right: 20px;">
+                <a href="#">HTML</a></li>
+            <li
+                style="display:inline-block;background-color: #f44336;padding: 15px 25px;text-align: center;margin-right: 20px;">
+                <a href="#">CSS</a></li>
+            <li
+                style="display:inline-block;background-color: #f44336;padding: 15px 25px;text-align: center;margin-right: 20px;">
+                <a href="#">JavaScript</a></li>
+        </ul>
+    </nav>
+    <div class="tutorial">
+        <a href="https://www.w3schools.com/html/" target="_blank" rel="noopener noreferrer">
+            <img src="./HTML.png" alt="HTML link">
+        </a>
+        <p>
+            HTML works everywhere.<br>
+            Easier to learn.<br>
+            Can combine with other languages.<br>
+            Can be used for business purposes.
+        </p>
+    </div>
+
+    <!-- CSS Section -->
+    <div class="tutorial">
+        <a href="https://www.w3schools.com/css/default.asp" target="_blank" rel="noopener noreferrer">
+            <img src="./CSS.png" alt="CSS link">
+        </a>
+        <p>
+            Makes website look good.<br>
+            Saves Time and work by coding once, using multiple times.<br>
+            Improves website loading speed.<br>
+            Enhances website accessibility.
+        </p>
+    </div>
+
+    <!-- JavaScript Section -->
+    <div class="tutorial">
+        <a href="https://www.w3schools.com/js/default.asp" target="_blank" rel="noopener noreferrer">
+            <img src="./javascipt.png" alt="JavaScript link">
+        </a>
+        <p>
+            Makes web page interactive.<br>
+            Runs directly in the browser.<br>
+            Versatile and powerful.<br>
+            Supports modern development.
+        </p>
+    </div>
+    
+</body>
+
+</html>
